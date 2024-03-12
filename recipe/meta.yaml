@@ -1,5 +1,5 @@
 {% set name = "h2o-wave" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/h2oai/wave/archive/v{{ version }}.tar.gz
-  sha256: 455c1babcad497e14b8289ed4001e3f01a868356b2aa7900028b31f753a21f77
+  sha256: 0c7ad372e302ba9a86015179abd37b7cd7d7fb63ffbb11b004ba2d3d64719160
 
 build:
   entry_points:
