@@ -1,5 +1,5 @@
 {% set name = "h2o-wave" %}
-{% set version = "1.5.3" %}
+{% set version = "1.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://github.com/h2oai/wave/archive/v{{ version }}.tar.gz
-  sha256: b09e8f1c49d9f3e789570d75bd9c2b016d90c1a3d088cfbdcc043f5bc55f5cd0
+  sha256: 48ce4ddde3d8289c09b9a8b7601ca0d2d87c4354f5a3d48bb7aed7c867601034
 
 build:
   entry_points:
     - wave = h2o_wave.cli:main
   noarch: python
   script: {{ PYTHON }} -m pip install ./py/h2o_wave -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
