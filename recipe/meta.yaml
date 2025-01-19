@@ -28,16 +28,6 @@ requirements:
     - inquirer
     - starlette >=0.13.8
     - uvicorn >=0.17.6
-    - arm_pyart
-    - hatchling
-    - jedi
-    - lsprotocol
-    - parso
-    - playwright-python
-    - pygls
-    - pytest
-    - requests
-    - seismon
 
 test:
   imports:
