@@ -22,6 +22,12 @@ requirements:
     - hatchling
     - pip
   run:
+    - python >={{ python_min }}
+    - click
+    - httpx >=0.16.1
+    - inquirer
+    - starlette >=0.13.8
+    - uvicorn >=0.17.6
     - arm_pyart
     - hatchling
     - jedi
@@ -32,12 +38,6 @@ requirements:
     - pytest
     - requests
     - seismon
-    - python >={{ python_min }}
-    - click
-    - httpx >=0.16.1
-    - inquirer
-    - starlette >=0.13.8
-    - uvicorn >=0.17.6
 
 test:
   imports:
